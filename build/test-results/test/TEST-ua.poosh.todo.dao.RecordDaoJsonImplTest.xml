@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ua.poosh.todo.dao.RecordDaoJsonImplTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-01-30T20:41:01" hostname="PooshLT" time="0.062">
+  <properties/>
+  <testcase name="delete" classname="ua.poosh.todo.dao.RecordDaoJsonImplTest" time="0.047"/>
+  <testcase name="findAll" classname="ua.poosh.todo.dao.RecordDaoJsonImplTest" time="0.0"/>
+  <testcase name="findOne" classname="ua.poosh.todo.dao.RecordDaoJsonImplTest" time="0.015"/>
+  <testcase name="update" classname="ua.poosh.todo.dao.RecordDaoJsonImplTest" time="0.0"/>
+  <testcase name="save" classname="ua.poosh.todo.dao.RecordDaoJsonImplTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

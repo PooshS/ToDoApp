@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8" />
+		<title>todo_main_page</title>
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+		</script>
+
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body>
+		
+		<div id="myDIV" class="header">
+			<h2>My To Do List</h2>
+			<input type="text" id="myInput" placeholder="Title...">
+			<span id="addButtonId" class="addBtn">Add</span>
+		</div>
+
+		<ul id="myUL">
+			
+		</ul> 
+
+
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				function toDoListBuild(resp){
+					var record = jQuery.parseJSON(resp);
+
+					$.each(record, function(key, value) {
+
+						createLiElement(value);
+
+					});
+				}
+
+					
+				function createLiElement(value){
+					var toDoId = value.id;
+					var toDoText = value.toDo;
+					var toDoDone = value.done;
+
+					var li = $(document.createElement('li'));
+					var t = $(document.createTextNode(toDoText));
+					li.append(t);
+					$('#myUL').append(li);
+					li.attr("id", toDoId);
+					if(toDoDone)li.attr("class", 'checked');
+					
+					closeButtonCreate(li);
+
+					addCheckedEventToListOne(li);
+				}
+
+
+				function closeButtonCreate(li){
+
+					var span = $(document.createElement('SPAN'));
+					var txt = $(document.createTextNode("\u00D7"));
+
+					span.attr("class", 'close');
+					span.append(txt);
+					li.append(span);
+
+					span.click(function(){
+						var div = this.parentElement;
+						div.style.display = "none";
+
+						var delToDo = div.id;
+						var obj = {id : delToDo};
+
+						// construct an HTTP request and send the collected data as JSON
+						addTodoAjax(obj, "/del-record");
+					});
+				}
+
+
+				// Create a new list item when clicking on the "Add" button
+				function newElement() {
+					var inputValue = $("#myInput").val();
+
+					if (inputValue === '') {
+						alert("You must write something!");
+						
+					}else{
+
+						var obj = {toDo : inputValue};
+
+						// construct an HTTP request
+						addTodoAjax(obj, "/add-record");
+
+						// clean myInput
+						$('#myInput').val("");
+					}
+				}
+
+
+				function addCheckedEventToListOne(li){
+						$(li).click( function(event){
+							if (event.target.tagName === 'LI'){
+							event.target.classList.toggle('checked');
+							var uppValue = event.target.id;
+							var obj = {id : uppValue};
+							addTodoAjax(obj, "/upp-record");
+							}
+						});
+				}
+
+
+				function addTodoAjax(obgct, handler){
+
+					$.ajax(handler, {
+						method: 'POST',
+						data: JSON.stringify(obgct)
+					})
+					.then(function success(data) {
+						if (data && handler == "/show-all-records") {
+
+							toDoListBuild(data);
+
+						}else if(data && handler == "/add-record"){
+
+							createLiElement(JSON.parse(data));
+						}
+					},function fail(data, status) {
+						console.log('Request failed.  Returned status of ' + status);
+					});
+				}
+
+				$("#addButtonId").click(newElement);
+
+				addTodoAjax("", "/show-all-records");
+
+			});
+
+		</script>
+
+	</body>
+
+</html>

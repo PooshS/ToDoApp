@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ua.poosh.todo.rest.AddRecordHandlerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-25T20:59:02" hostname="PooshLT" time="0.0">
+  <properties/>
+  <testcase name="handle" classname="ua.poosh.todo.rest.AddRecordHandlerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
