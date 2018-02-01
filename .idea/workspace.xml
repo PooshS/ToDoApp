@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92f303a7-cd93-430c-b7bd-71eb796490b6" name="Default" comment="first">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/fileContent/fileContent.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/jvmClassSignatures.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/jvmClassSignatures.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ua.poosh.todo.controller.MainControllerImplTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ua.poosh.todo.controller.MainControllerImplTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ua.poosh.todo.dao.RecordDaoJsonImplTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ua.poosh.todo.dao.RecordDaoJsonImplTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ua.poosh.todo.model.ToDoTests.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ua.poosh.todo.model.ToDoTests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ua.poosh.todo.controller.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ua.poosh.todo.controller.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ua.poosh.todo.dao.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ua.poosh.todo.dao.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ua.poosh.todo.model.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ua.poosh.todo.model.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ua.poosh.todo.controller.MainControllerImplTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ua.poosh.todo.controller.MainControllerImplTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ua.poosh.todo.dao.RecordDaoJsonImplTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ua.poosh.todo.dao.RecordDaoJsonImplTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ua.poosh.todo.model.ToDoTests.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ua.poosh.todo.model.ToDoTests.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/poosh/todo/utils/Tmp.java" afterPath="$PROJECT_DIR$/src/main/java/ua/poosh/todo/utils/Tmp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
